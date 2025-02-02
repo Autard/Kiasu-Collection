@@ -6,11 +6,32 @@
 }
 
 body {
+  position: relative;        /* So we can place a pseudo-element */
   font-family: Arial, sans-serif;
-  background-color: #f5e4d7; /* beige tone */
-  color: #7b2a25; /* maroon/dark red */
+  background-color: #f5e4d7; /* Beige fallback */
+  color: #7b2a25;
   line-height: 1.6;
 }
+
+/* Pseudo-element to hold the texture with low opacity */
+body::before {
+  content: "";
+  position: fixed; /* or absolute, but fixed is typical for a background that stays put */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* The texture image - repeat or cover depending on your preference */
+  background: url("images/background-texture.png") repeat;
+  
+  /* Adjust the opacity to your liking (0.1 to 1) */
+  opacity: 0.2; 
+
+  /* This ensures the background is behind everything else */
+  z-index: -1;
+}
+
 
 /* NAV / HEADER */
 header {
