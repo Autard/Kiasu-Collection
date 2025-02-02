@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiasu Collection</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION (Optional) -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#how-to-order">How to Order</a></li>
+        <li><a href="#kiasu-collection">Kiasu Collection</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#contact">Contact / Chat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO or BANNER SECTION: HOW TO ORDER -->
+  <section id="how-to-order" class="how-to-order-section">
+    <div class="how-to-order-container">
+      <h1>HOW TO ORDER</h1>
+      <ul class="how-to-order-list">
+        <li>Select <strong>[Necklace]</strong> or <strong>[Bracelet]</strong></li>
+        <li>Choose your chain</li>
+        <li>Choose your charm(s)</li>
+        <li>Fill out our Google Form for a quotation</li>
+      </ul>
+      <a class="order-button" href="#order-form">Click Here</a>
+    </div>
+  </section>
+
+  <!-- KIASU COLLECTION SECTION -->
+  <section id="kiasu-collection" class="kiasu-section">
+    <h2 class="kiasu-title">kiasu</h2>
+    <p class="kiasu-subtitle">collection</p>
+  </section>
+
+  <!-- FEATURED SECTION -->
+  <section id="featured" class="featured-section">
+    <h2>FEATURED</h2>
+    <div class="featured-gallery">
+      <div class="featured-item">
+        <img src="images/featured1.jpg" alt="Featured Product 1" />
+      </div>
+      <div class="featured-item">
+        <img src="images/featured2.jpg" alt="Featured Product 2" />
+      </div>
+      <div class="featured-item">
+        <img src="images/featured3.jpg" alt="Featured Product 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER FORM LINK / CTA  -->
+  <section id="order-form" class="order-form-section">
+    <h2>Ready to Order?</h2>
+    <p>Please fill out our Google Form for a quotation:</p>
+    <!-- Replace the # with your actual Google Form URL below -->
+    <a href="https://forms.gle/your-google-form-link" 
+       target="_blank" 
+       class="google-form-link">
+      Order Form
+    </a>
+  </section>
+
+  <!-- CHAT / CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2>Have a Question?</h2>
+    <p>Ask via our Chat Box:</p>
+
+    <!-- Simple Chat Button Trigger -->
+    <button id="chatOpenBtn" class="chat-open-btn">Open Chat</button>
+
+    <!-- The Chat Box (hidden by default) -->
+    <div id="chatBox" class="chat-box">
+      <div class="chat-header">
+        <span>Inquiries</span>
+        <button id="chatCloseBtn" class="chat-close-btn">&times;</button>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <!-- Chat messages appear here -->
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Type your question..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Kiasu Collection. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
