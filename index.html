@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- HEADER / NAVIGATION (reordered) -->
+  <!-- HEADER / NAVIGATION -->
   <header>
     <nav>
       <ul>
@@ -19,36 +19,35 @@
         <li><a href="#featured">Featured</a></li>
         <!-- How to Order last -->
         <li><a href="#how-to-order">How to Order</a></li>
-        <!-- Contact / Chat remains -->
-        <li><a href="#contact">Contact / Chat</a></li>
+        <!-- FAQ Popup -->
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- KIASU COLLECTION SECTION (now at the top) -->
+  <!-- KIASU COLLECTION SECTION (top) -->
   <section id="kiasu-collection" class="kiasu-section">
     <h2 class="kiasu-title">kiasu</h2>
     <p class="kiasu-subtitle">collection</p>
   </section>
 
-  <!-- FEATURED SECTION (second) -->
+  <!-- FEATURED SECTION (middle) -->
   <section id="featured" class="featured-section">
     <h2>FEATURED</h2>
     <div class="featured-gallery">
       <div class="featured-item">
-        <img src="Images/featured1.png" alt="Featured Product 1" />
+        <img src="images/featured1.png" alt="Featured Product 1" />
       </div>
       <div class="featured-item">
-        <img src="Images/featured2.png" alt="Featured Product 2" />
+        <img src="images/featured2.png" alt="Featured Product 2" />
       </div>
       <div class="featured-item">
-        <img src="Images/featured3.png" alt="Featured Product 3" />
+        <img src="images/featured3.png" alt="Featured Product 3" />
       </div>
     </div>
   </section>
-  
 
-  <!-- HOW TO ORDER SECTION (now last) -->
+  <!-- HOW TO ORDER SECTION (bottom) -->
   <section id="how-to-order" class="how-to-order-section">
     <div class="how-to-order-container">
       <h1>HOW TO ORDER</h1>
@@ -62,7 +61,7 @@
     </div>
   </section>
 
-  <!-- ORDER FORM LINK / CTA -->
+  <!-- ORDER FORM LINK / CTA  -->
   <section id="order-form" class="order-form-section">
     <h2>Ready to Order?</h2>
     <p>Please fill out our Google Form for a quotation:</p>
@@ -74,26 +73,50 @@
     </a>
   </section>
 
-  <!-- CHAT / CONTACT SECTION -->
-  <section id="contact" class="contact-section">
-    <h2>Have a Question?</h2>
-    <p>Ask via our Chat Box:</p>
+  <!-- FAQ BUTTON & POPUP -->
+  <!-- "FAQ" anchor for the nav link above -->
+  <section id="faq" class="faq-section">
+    <h2>Need More Info?</h2>
+    <p>Check out our Frequently Asked Questions:</p>
 
-    <!-- Simple Chat Button Trigger -->
-    <button id="chatOpenBtn" class="chat-open-btn">Open Chat</button>
+    <!-- Button to open the FAQ popup -->
+    <button id="faqOpenBtn" class="faq-open-btn">View FAQ</button>
 
-    <!-- The Chat Box (hidden by default) -->
-    <div id="chatBox" class="chat-box">
-      <div class="chat-header">
-        <span>Inquiries</span>
-        <button id="chatCloseBtn" class="chat-close-btn">&times;</button>
+    <!-- FAQ Popup (hidden by default) -->
+    <div id="faqBox" class="faq-box">
+      <div class="faq-header">
+        <span>Frequently Asked Questions</span>
+        <button id="faqCloseBtn" class="faq-close-btn">&times;</button>
       </div>
-      <div class="chat-body" id="chatBody">
-        <!-- Chat messages appear here -->
-      </div>
-      <div class="chat-footer">
-        <input type="text" id="chatInput" placeholder="Type your question..." />
-        <button id="sendBtn">Send</button>
+      <div class="faq-body" id="faqBody">
+        <!-- EXAMPLE FAQ items -->
+        <div class="faq-item">
+          <button class="faq-question">1. What is the Kiasu Collection about?</button>
+          <div class="faq-answer">
+            The Kiasu Collection is a unique jewelry line featuring bracelets and necklaces with customizable charms. Each piece is designed with a modern twist on classic styles.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">2. How do I place an order?</button>
+          <div class="faq-answer">
+            Simply head to our “How to Order” section, choose your chain style and charms, then fill out our Google Form for a quotation.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">3. Do you offer international shipping?</button>
+          <div class="faq-answer">
+            Yes, we ship worldwide. Shipping fees depend on your location, and we’ll provide details in the quotation.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">4. Can I customize my charms?</button>
+          <div class="faq-answer">
+            Absolutely! You can choose from a range of charm styles or request custom engraving. Contact us for details.
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -105,19 +128,5 @@
 
   <!-- Link to External JS -->
   <script src="script.js"></script>
-
-  <div id='tawk_679eea983a8427326078a59e'></div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); Tawk_API.embedded='tawk_679eea983a8427326078a59e';
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/679eea983a8427326078a59e/1ij2eb08c';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);})();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>

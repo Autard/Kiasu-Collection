@@ -1,46 +1,27 @@
-// Get elements
-const chatOpenBtn = document.getElementById('chatOpenBtn');
-const chatBox = document.getElementById('chatBox');
-const chatCloseBtn = document.getElementById('chatCloseBtn');
-const sendBtn = document.getElementById('sendBtn');
-const chatInput = document.getElementById('chatInput');
-const chatBody = document.getElementById('chatBody');
+// FAQ POPUP ELEMENTS
+const faqOpenBtn = document.getElementById('faqOpenBtn');
+const faqBox = document.getElementById('faqBox');
+const faqCloseBtn = document.getElementById('faqCloseBtn');
+const faqQuestions = document.querySelectorAll('.faq-question');
 
-// Open Chat
-chatOpenBtn.addEventListener('click', () => {
-  chatBox.style.display = 'flex';
+// OPEN THE FAQ POPUP
+faqOpenBtn.addEventListener('click', () => {
+  faqBox.style.display = 'flex';
 });
 
-// Close Chat
-chatCloseBtn.addEventListener('click', () => {
-  chatBox.style.display = 'none';
+// CLOSE THE FAQ POPUP
+faqCloseBtn.addEventListener('click', () => {
+  faqBox.style.display = 'none';
 });
 
-// Send Message
-sendBtn.addEventListener('click', sendMessage);
-
-// Also allow Enter key to send
-chatInput.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    sendMessage();
-  }
+// TOGGLE FAQ ANSWERS
+faqQuestions.forEach((question) => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+  });
 });
-
-function sendMessage() {
-  const message = chatInput.value.trim();
-  if (message) {
-    // Create a chat bubble or paragraph
-    const userMsg = document.createElement('div');
-    userMsg.style.margin = '5px 0';
-    userMsg.innerHTML = `<strong>You:</strong> ${message}`;
-
-    chatBody.appendChild(userMsg);
-    chatInput.value = '';
-
-    // Auto-scroll chatBody
-    chatBody.scrollTop = chatBody.scrollHeight;
-
-    // In a real scenario, you would send the `message` to your server 
-    // or an API, then handle the response here. 
-  }
-}
